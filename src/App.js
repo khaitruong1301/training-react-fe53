@@ -10,6 +10,8 @@ import EventBinding from './EventBinding/EventBinding';
 import DemoState from './State/DemoState';
 import BaiTapChonXe from './State/BaiTapChonXe';
 import RenderWithMap from './RenderWithMap/RenderWithMap';
+import DemoProps from './Props/DemoProps/DemoProps';
+import BTProductList from './Props/BTDanhSachSanPham/BTProductList';
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
         {/* <EventBinding /> */}
         {/* <DemoState /> */}
         {/* <BaiTapChonXe /> */}
-        <RenderWithMap />
+        {/* <RenderWithMap /> */}
+        {/* <DemoProps /> */}
+        <BTProductList />
     </div>
   );
 }
