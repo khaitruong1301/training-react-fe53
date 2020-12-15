@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class BTProduct extends Component {
     //Đối với react class component this.props: là thuộc tính nhận giá trị từ component cha truyền vào và không thể gán lại 
 
+  
     render() {
 
         let {maSP,tenSP,giaBan,hinhAnh} = this.props.product;
@@ -16,6 +17,10 @@ export default class BTProduct extends Component {
                     <button className="btn btn-success" onClick={()=>{
                         this.props.xemCT(this.props.product);
                     }}>Xem chi tiết</button>
+                    <button className="btn btn-danger" onClick={()=>{
+                        //Nhận props là hàm thêm giỏ hàng từ component cha truyền vào
+                        this.props.themGioHang(this.props.product)
+                    }}>Thêm giỏ hàng</button>
                 </div>
             </div>
 
